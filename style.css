@@ -1840,34 +1840,3 @@ a {
         transition-duration: 0.01ms !important;
     }
 }
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 35px 6vw;
-
-    border-top: 1px solid rgba(255,255,255,0.08);
-
-    color: rgba(255,255,255,0.35);
-
-    font-size: 9px;
-    letter-spacing: 2px;
-}
-
-.footer a {
-    color: rgba(255,255,255,0.5);
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: #a78bfa;
-}
-
-@media (max-width: 600px) {
-    .footer {
-        flex-direction: column;
-        gap: 18px;
-        text-align: center;
-    }
-}
