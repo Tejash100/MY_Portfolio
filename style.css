@@ -470,7 +470,9 @@ a {
 .hero-button {
     position: relative;
 
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding: 14px 25px;
 
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -1119,7 +1121,7 @@ a {
 
     margin: 0 auto;
 
-    padding: 150px var(--gutter) 80px;
+    padding: 150px var(--gutter) 50px;
 }
 
 .contact-heading {
@@ -1395,6 +1397,35 @@ a {
 
 .contact-socials a:hover::after {
     width: calc(100% - 8px);
+}
+
+/* =========================================================
+   FOOTER
+   (base styles; tablet/mobile tweaks are in the responsive block)
+========================================================= */
+
+.site-footer {
+    position: relative;
+    z-index: 2; /* above the background grid overlay */
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 30px;
+
+    width: 100%;
+    max-width: 1600px;
+
+    margin: 0 auto;
+    padding: 20px var(--gutter) 40px;
+
+    color: rgba(255, 255, 255, 0.35);
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 /* =========================================================
@@ -1894,7 +1925,7 @@ button:focus-visible {
            --section-end : space under the last section (contact)
            --hero-end    : space under the hero content              */
         --section-gap: 120px;
-        --section-end: 70px;
+        --section-end: 40px;
         --hero-end: 50px;
     }
 
@@ -2023,7 +2054,7 @@ button:focus-visible {
         --gutter: 35px;
 
         --section-gap: 90px;
-        --section-end: 60px;
+        --section-end: 36px;
         --hero-end: 40px;
     }
 
@@ -2334,7 +2365,7 @@ button:focus-visible {
         --gutter: 20px;
 
         --section-gap: 70px;
-        --section-end: 45px;
+        --section-end: 30px;
         --hero-end: 30px;
     }
 
@@ -2864,7 +2895,7 @@ button:focus-visible {
         --gutter: 18px;
 
         --section-gap: 60px;
-        --section-end: 40px;
+        --section-end: 28px;
     }
 
 
@@ -3018,7 +3049,7 @@ button:focus-visible {
         --gutter: 16px;
 
         --section-gap: 56px;
-        --section-end: 36px;
+        --section-end: 26px;
     }
 
 
