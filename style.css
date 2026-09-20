@@ -3102,6 +3102,11 @@ button:focus-visible {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* undo the 400px rule that made the last stat span the whole row */
+    .about-stat:last-child {
+        grid-column: auto;
+    }
+
     .about-stat strong {
         font-size: 25px;
     }
@@ -3221,4 +3226,26 @@ button:focus-visible {
         scroll-behavior: auto !important;
     }
 
+}
+
+
+/* =========================================================
+   GRADIENT HEADING FIX
+   Gradient text is clipped to its box, and the tight line-height
+   made that box too short, cutting the bottom off letters like
+   "g" and "p". The extra padding gives the gradient room; the
+   negative margin keeps the layout exactly where it was.
+========================================================= */
+
+.hero-section h1 span,
+.about-intro h2 span,
+.projects-heading h2 span,
+.contact-heading h2 span {
+    padding-bottom: 0.14em;
+}
+
+.hero-section h1 span,
+.about-intro h2 span,
+.contact-heading h2 span {
+    margin-bottom: -0.14em;
 }
